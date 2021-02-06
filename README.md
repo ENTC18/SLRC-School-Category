@@ -10,7 +10,29 @@
 
 ---
 
-[Webots Crash Course](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
+## *Tutorials*
+
+[Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
+
+### Webot Tutorial Sessions
+
+1. Install webot
+2. Creating a new project
+3. Adding floor
+4. Creating solid shaps
+5. Creating solid groups
+6. Adding sample robot (e-puck)
+7. Adding object avoiding code to e-puck
+8. Adding sample 4wheel robot
+9. Creating new code (code wizard)
+10. Adding sample object avoiding code to 4wheel robot
+11. Adding new distance sensors to sample robot
+12. Get readings from new sensors (using any language)
+13. Creating own simple wall following maze by using solids
+14. Write simple wall following code for sample robot
+15. Object detection
+
+---
 
 ## Current Plan
 
