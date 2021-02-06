@@ -1,4 +1,4 @@
-# *SLRC School Category Project Description*
+# *SLRC School Category Project Description* ⚠ Confidential
 
 ### Important notice ⚠ :
 
