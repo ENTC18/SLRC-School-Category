@@ -38,6 +38,7 @@
  <h3 align="center">Do not provide anything related to this repository to outsiders.</h3>
 
 
+
 ## Current Plan
 
 |Level|Number of Tasks|Allowed Time Duration|
@@ -45,3 +46,8 @@
 |Easy|8||
 |Medium|6||
 |Hard|3||
+
+## Task Designers
+
+[UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
+
