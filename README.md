@@ -12,7 +12,8 @@
 
 ## *Tutorials*
 
-#### [Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
+#### 1. [Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
+#### 2. [Webots on YouTube](https://www.youtube.com/watch?v=yi4e5FoVWbQ&list=PLt69C9MnPchlWEV5AEhfT2HajlE2SJ55V)
 
 #### Webot Tutorial Sessions
 
@@ -43,7 +44,7 @@
 
 |Level|Number of Tasks|Allowed Time Duration|
 |:----:|:---:|:---:|
-|Easy|8||
+|Easy|9||
 |Medium|6||
 |Hard|3||
 
