@@ -47,7 +47,5 @@
 |Medium|6||
 |Hard|3||
 
-## Task Designers
-
-[UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
+## Task Designers [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
 
