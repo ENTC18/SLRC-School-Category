@@ -1,6 +1,6 @@
-# *SLRC School Category Project Description* ⚠ Confidential
+# *SLRC School Category Project Description* 
 
-### Important notice ⚠ :
+### ⚠ Important notice for contributors:
 
 1. **Do not modify the `.gitignore` file in the repository**
 2. **Create project files only inside the respective folders. If it is a Task in EASY category; Select the project directory as `../EASY/Easy Taski` for i={1,2,3,4,5,6,7,8} when creating a new project in the webots.**
@@ -12,9 +12,9 @@
 
 ## *Tutorials*
 
-[Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
+#### [Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
 
-### Webot Tutorial Sessions
+#### Webot Tutorial Sessions
 
 1. Install webot
 2. Creating a new project
@@ -33,6 +33,10 @@
 15. Object detection
 
 ---
+
+ <h2 align="center">⚠ Confidential ⚠</h2>
+ <h3 align="center">Do not provide anything related to this repository to outsiders.</h3>
+
 
 ## Current Plan
 
