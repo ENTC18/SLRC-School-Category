@@ -23,9 +23,7 @@
 ## *Tutorials*
 
 #### 1. [Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
-#### 2. [Webots on YouTube](https://www.youtube.com/watch?v=yi4e5FoVWbQ&list=PLt69C9MnPchlWEV5AEhfT2HajlE2SJ55V)
-
-#### 3. Webot Tutorial Sessions to be conducted...
+#### 2. Webot Tutorial Sessions to be conducted...
 
 1. Install webot
 2. Creating a new project
