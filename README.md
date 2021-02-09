@@ -1,6 +1,7 @@
  <h2 align="center">⚠ Confidential ⚠</h2>
  <h3 align="center">Do not provide anything related to this repository to outsiders.</h3>
 
+---
 
 # *SLRC School Category Project Description* 
 
@@ -17,14 +18,14 @@
 ## *Webots Download Links*
 
 #### 1. [Data free DMS link](https://dms.uom.lk/s/DYKYorgd8q8F2Yk)
-#### 2. [Directly from cyebrbotics website](https://www.cyberbotics.com/)
+#### 2. [Directly from cyberbotics website](https://www.cyberbotics.com/)
 
 ## *Tutorials*
 
 #### 1. [Webots Crash Course on YouTube](https://youtube.com/playlist?list=PLt69C9MnPchkLuNNc4q9SeMFA96_v4THJ)
 #### 2. [Webots on YouTube](https://www.youtube.com/watch?v=yi4e5FoVWbQ&list=PLt69C9MnPchlWEV5AEhfT2HajlE2SJ55V)
 
-#### Webot Tutorial Sessions to be conducted...
+#### 3. Webot Tutorial Sessions to be conducted...
 
 1. Install webot
 2. Creating a new project
@@ -52,5 +53,5 @@
 |Medium|6||
 |Hard|3||
 
-## Task Designers [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
+## Task Designers [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)🔴
 
