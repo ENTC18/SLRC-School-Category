@@ -46,7 +46,7 @@
 ## Current Plan
 
 |Level|Number of Tasks|Allowed Time Duration|
-|:----:|:---:|:---:|
+|:----:|:---:|:---|
 |Easy|6|Starts at March 1st week|
 |Medium|3|Starts at March 3rd week|
 |Hard|2|Starts at April 2nd week|
