@@ -47,9 +47,9 @@
 
 |Level|Number of Tasks|Allowed Time Duration|
 |:----:|:---:|:---:|
-|Easy|9||
-|Medium|6||
-|Hard|3||
+|Easy|6||
+|Medium|3||
+|Hard|2||
 
 ## Task Designers [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)🔴
 
