@@ -1,6 +1,6 @@
 # Task Description
 
-*Provide a full description of the task here.*
+
 
 Create a 6cm*6cm*6cm cube of mass 200g. (Note – You should apply physics). Place a distance sensor at the middle of a face of the cube. Range of the sensor is 20cm-400cm. Box will be placed on a flat surface of a robot with 3600 view angles. Robot will revolve around its axis at a fixed angular velocity
 
