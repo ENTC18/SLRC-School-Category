@@ -1,0 +1,89 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.9890975465051755 0.1137480408782263 0.09352767875772072 5.221443290028444
+  position -0.32079580065736557 1.62684730654703 0.8030850557864497
+}
+TexturedBackground {
+  texture "empty_office"
+}
+Solid {
+  translation 0 0.05 -0.49
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.02
+      }
+    }
+    Solid {
+    }
+  ]
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+Solid {
+  translation 0.49 0.05 0
+  rotation 0 1 0 1.57
+  children [
+    USE wall
+  ]
+  name "solid(3)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+Solid {
+  translation -0.49 0.05 0
+  rotation 0 1 0 1.5708
+  children [
+    USE wall
+  ]
+  name "solid(4)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+Solid {
+  translation -0.238881 0.05 -0.00116969
+  rotation 0 1 0 1.5708
+  children [
+    USE wall
+  ]
+  name "solid(1)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_countryside"
+}
+E-puck {
+  translation -0.310138 -5.30132e-15 -0.397073
+  rotation 0 1 0 3.14159
+  controller "obstacle_avoidance"
+}
+Floor {
+  size 1 1
+}
+Solid {
+  translation 0 0.05 0.49
+  children [
+    USE wall
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}

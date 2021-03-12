@@ -1,0 +1,119 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.993554652395624 -0.10246660441872552 -0.04847419604188165 0.8887594175542742
+  position -0.20438010531601286 1.3430274949199217 1.1545512902938013
+}
+TexturedBackground {
+  texture "empty_office"
+}
+Solid {
+  translation -0.322772 1.90958e-14 0.18626
+  rotation 0 1 0 0.333794
+  children [
+    DEF ball_shape Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Sphere {
+    radius 0.05
+    subdivision 2
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation 0 0.05 -0.49
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.1 0.02
+      }
+    }
+    Solid {
+    }
+  ]
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+Solid {
+  translation 0.49 0.05 0
+  rotation 0 1 0 1.57
+  children [
+    USE wall
+  ]
+  name "solid(3)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+Solid {
+  translation -0.49 0.05 0
+  rotation 0 1 0 1.5708
+  children [
+    USE wall
+  ]
+  name "solid(4)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
+TexturedBackgroundLight {
+}
+WoodenBox {
+  translation 0.0936289 0.0541162 -0.0395918
+  rotation -1.13922e-14 1 2.45346e-15 0.261799
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation 0.0951184 0.0541162 0.225675
+  rotation -1.13922e-14 1 2.45346e-15 0.261799
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation 0.0356556 0.0541162 -0.265996
+  rotation -1.13922e-14 1 2.45346e-15 0.261799
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+E-puck {
+  translation -0.193331 -3.88578e-15 0.00467134
+  rotation 0 1 0 2.61799
+  controller "my_controller"
+}
+Floor {
+  size 1 1
+}
+Solid {
+  translation 0 0.05 0.49
+  children [
+    USE wall
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+  physics Physics {
+    mass 1
+  }
+}
