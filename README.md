@@ -16,6 +16,21 @@
 ---
 
 🔴 
+## Useul Utilities for task designing
+
+1. [Utility to convert URDF files to Webots PROTO nodes](https://github.com/cyberbotics/urdf2webots)
+```python
+
+>>> pip install urdf2webots # using cmd prompt
+# Change directory to where your URDF file is, and use Power Shell
+>>> python
+>>> from urdf2webots.importer import convert2urdf
+>>> convert2urdf('MY_PATH/MY_URDF.urdf')
+
+```
+2. [SolidWorks to URDF](https://youtu.be/cSeFLz0bCXw)
+3. [Solidworks URDF Exporter](https://github.com/ros/solidworks_urdf_exporter)
+
 ## *Task Designers* [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
 
 ## *Webots Download Links*
