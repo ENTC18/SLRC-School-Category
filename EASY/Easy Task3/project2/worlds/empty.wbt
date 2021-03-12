@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.2437958097801847 -0.9401644940724064 -0.23802169484986038 2.3859464098355274
-  position -0.37546917276564057 0.7252249706755856 -0.7461416184125754
+  orientation -0.18770264923527108 -0.951683192850058 -0.243036655500318 2.688342746151787
+  position -0.09200387277631576 0.25844978325996687 -0.4832733833322651
 }
 TexturedBackground {
 }
@@ -51,7 +51,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.075 0.05 0.01
-        rotation -0.5773502691896257 0.5773502691896257 -0.5773502691896257 2.094395
+        rotation -0.5773502691896258 0.5773502691896258 -0.5773502691896257 2.094395
         children [
           Shape {
             appearance DEF RF_material PBRAppearance {
@@ -153,7 +153,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.075 0.05 0.01
-        rotation 0.305438101602016 0.901895300009659 0.305438101602016 1.67387
+        rotation 0.3054381016020161 0.901895300009659 0.3054381016020162 1.6738699999999997
         children [
           Shape {
             appearance DEF LF_material PBRAppearance {
@@ -204,7 +204,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.075 -0.06 0.01
-        rotation 0.6609417825686956 0.3554038830820933 0.6609417825686956 2.45863
+        rotation 0.6609417825686957 0.35540388308209325 0.6609417825686955 2.4586299999999994
         children [
           Shape {
             appearance DEF LB_material PBRAppearance {
@@ -274,6 +274,99 @@ Robot {
         }
       ]
       name "led(1)"
+    }
+    DEF blue3 LED {
+      translation 0 0.11 0.02
+      rotation 1 0 0 1.5708
+      children [
+        DEF blue_led Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Capsule {
+            height 0.01
+            radius 0.0025
+          }
+        }
+      ]
+      name "blue"
+    }
+    DEF blue2 LED {
+      translation 0.05 0.11 0.0200004
+      rotation 1 0 0 1.5708
+      children [
+        USE blue_led
+      ]
+      name "led(2)"
+    }
+    DEF blue1 LED {
+      translation 0.1 0.11 0.0200004
+      rotation 1 0 0 1.5708
+      children [
+        USE blue_led
+      ]
+      name "led(3)"
+    }
+    DEF blue4 LED {
+      translation -0.05 0.11 0.0200003
+      rotation 1 0 0 1.5708
+      children [
+        USE blue_led
+      ]
+      name "led(4)"
+    }
+    DEF blue5 LED {
+      translation -0.1 0.11 0.0200004
+      rotation 1 0 0 1.5708
+      children [
+        USE blue_led
+      ]
+      name "led(5)"
+    }
+    DistanceSensor {
+      translation 0.1 0.115 0
+      children [
+        DEF sensor Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.02
+          }
+        }
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0.115 0
+      children [
+        USE sensor
+      ]
+      name "distance sensor(1)"
+    }
+    DistanceSensor {
+      translation 0 0.115 0
+      children [
+        USE sensor
+      ]
+      name "distance sensor(2)"
+    }
+    DistanceSensor {
+      translation -0.05 0.115 0
+      children [
+        USE sensor
+      ]
+      name "distance sensor(3)"
+    }
+    DistanceSensor {
+      translation -0.1 0.115 0
+      children [
+        USE sensor
+      ]
+      name "distance sensor(4)"
     }
   ]
   name "Urdf9"
