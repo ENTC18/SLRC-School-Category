@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="Assem1">
+  name="urdf4">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-4.30659230155686E-06 0.00991258876708149 -0.0221529540717541"
+        xyz="-4.3066E-06 0.0099126 -0.022153"
         rpy="0 0 0" />
       <mass
-        value="0.734157679226464" />
+        value="0.73416" />
       <inertia
-        ixx="0.00351396795462361"
-        ixy="2.71327909754854E-08"
-        ixz="1.10768951074218E-07"
-        iyy="0.00532306889577312"
-        iyz="-4.71400775733587E-06"
-        izz="0.00185783513184479" />
+        ixx="0.003514"
+        ixy="2.7133E-08"
+        ixz="1.1077E-07"
+        iyy="0.0053231"
+        iyz="-4.714E-06"
+        izz="0.0018578" />
     </inertial>
     <visual>
       <origin
@@ -26,12 +26,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/base_link.STL" />
+          filename="package://urdf4/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/base_link.STL" />
+          filename="package://urdf4/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="RF">
     <inertial>
       <origin
-        xyz="0 5.20417042793042E-18 0.00717282965435008"
+        xyz="0 5.2042E-18 0.0071728"
         rpy="0 0 0" />
       <mass
-        value="0.0489436503728706" />
+        value="0.048944" />
       <inertia
-        ixx="1.76621848414269E-05"
-        ixy="-7.20407711276585E-22"
-        ixz="-3.12063948656183E-22"
-        iyy="1.76621848414269E-05"
-        iyz="1.60513737402595E-22"
-        izz="3.36011356425037E-05" />
+        ixx="1.7662E-05"
+        ixy="-7.2378E-22"
+        ixz="-3.1076E-22"
+        iyy="1.7662E-05"
+        iyz="1.6024E-22"
+        izz="3.3601E-05" />
     </inertial>
     <visual>
       <origin
@@ -66,12 +66,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RF.STL" />
+          filename="package://urdf4/meshes/RF.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RF.STL" />
+          filename="package://urdf4/meshes/RF.STL" />
       </geometry>
     </collision>
   </link>
@@ -101,17 +101,17 @@
     name="RB">
     <inertial>
       <origin
-        xyz="-6.93889390390723E-18 3.46944695195361E-18 0.00717282965435007"
+        xyz="-6.9389E-18 6.9389E-18 0.0071728"
         rpy="0 0 0" />
       <mass
-        value="0.0489436503728706" />
+        value="0.048944" />
       <inertia
-        ixx="1.7662184841427E-05"
-        ixy="-8.76758942724358E-22"
-        ixz="-4.65081024653856E-22"
-        iyy="1.7662184841427E-05"
-        iyz="9.7625151719536E-23"
-        izz="3.36011356425037E-05" />
+        ixx="1.7662E-05"
+        ixy="-8.7888E-22"
+        ixz="-4.6372E-22"
+        iyy="1.7662E-05"
+        iyz="9.4692E-23"
+        izz="3.3601E-05" />
     </inertial>
     <visual>
       <origin
@@ -119,12 +119,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RB.STL" />
+          filename="package://urdf4/meshes/RB.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RB.STL" />
+          filename="package://urdf4/meshes/RB.STL" />
       </geometry>
     </collision>
   </link>
@@ -154,17 +154,17 @@
     name="LF">
     <inertial>
       <origin
-        xyz="-6.93889390390723E-18 -6.93889390390723E-18 -0.00717282965435005"
+        xyz="-3.4694E-18 -6.9389E-18 -0.0071728"
         rpy="0 0 0" />
       <mass
-        value="0.0489436503728706" />
+        value="0.048944" />
       <inertia
-        ixx="1.76621848414269E-05"
+        ixx="1.7662E-05"
         ixy="0"
-        ixz="4.40049937296268E-22"
-        iyy="1.76621848414269E-05"
-        iyz="3.14023811486334E-22"
-        izz="3.36011356425037E-05" />
+        ixz="4.4099E-22"
+        iyy="1.7662E-05"
+        iyz="3.1601E-22"
+        izz="3.3601E-05" />
     </inertial>
     <visual>
       <origin
@@ -172,12 +172,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LF.STL" />
+          filename="package://urdf4/meshes/LF.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -186,7 +186,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LF.STL" />
+          filename="package://urdf4/meshes/LF.STL" />
       </geometry>
     </collision>
   </link>
@@ -207,17 +207,17 @@
     name="LR">
     <inertial>
       <origin
-        xyz="0 -6.93889390390723E-18 -0.00717282965435007"
+        xyz="0 -6.9389E-18 -0.0071728"
         rpy="0 0 0" />
       <mass
-        value="0.0489436503728706" />
+        value="0.048944" />
       <inertia
-        ixx="1.7662184841427E-05"
-        ixy="2.5410988417629E-21"
-        ixz="6.92703769507587E-22"
-        iyy="1.7662184841427E-05"
-        iyz="-2.33376745207237E-23"
-        izz="3.36011356425037E-05" />
+        ixx="1.7662E-05"
+        ixy="1.6941E-21"
+        ixz="6.9408E-22"
+        iyy="1.7662E-05"
+        iyz="-2.5084E-23"
+        izz="3.3601E-05" />
     </inertial>
     <visual>
       <origin
@@ -225,12 +225,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LR.STL" />
+          filename="package://urdf4/meshes/LR.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LR.STL" />
+          filename="package://urdf4/meshes/LR.STL" />
       </geometry>
     </collision>
   </link>
@@ -248,7 +248,7 @@
     type="continuous">
     <origin
       xyz="-0.075 -0.06 0.01"
-      rpy="1.5707963267949 -0.584056750958047 1.5707963267949" />
+      rpy="1.5708 -0.58406 1.5708" />
     <parent
       link="base_link" />
     <child

@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="Assem1">
+  name="urdf5">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-4.30659230155686E-06 0.00991258876708149 -0.0221529540717541"
+        xyz="-4.3065923015566E-06 0.0221529540717541 0.00991258876708148"
         rpy="0 0 0" />
       <mass
-        value="0.734157679226464" />
+        value="0.734157679226463" />
       <inertia
         ixx="0.00351396795462361"
-        ixy="2.71327909754854E-08"
-        ixz="1.10768951074218E-07"
-        iyy="0.00532306889577312"
-        iyz="-4.71400775733587E-06"
-        izz="0.00185783513184479" />
+        ixy="-1.10768951074185E-07"
+        ixz="2.71327909754854E-08"
+        iyy="0.00185783513184479"
+        iyz="4.71400775733606E-06"
+        izz="0.00532306889577312" />
     </inertial>
     <visual>
       <origin
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/base_link.STL" />
+          filename="package://urdf5/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/base_link.STL" />
+          filename="package://urdf5/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,16 +48,16 @@
     name="RF">
     <inertial>
       <origin
-        xyz="0 5.20417042793042E-18 0.00717282965435008"
+        xyz="6.93889390390723E-18 3.46944695195361E-18 0.00717282965435007"
         rpy="0 0 0" />
       <mass
         value="0.0489436503728706" />
       <inertia
         ixx="1.76621848414269E-05"
-        ixy="-7.20407711276585E-22"
-        ixz="-3.12063948656183E-22"
+        ixy="-7.23783035983899E-22"
+        ixz="-3.11701655694594E-22"
         iyy="1.76621848414269E-05"
-        iyz="1.60513737402595E-22"
+        iyz="1.62936887161284E-22"
         izz="3.36011356425037E-05" />
     </inertial>
     <visual>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RF.STL" />
+          filename="package://urdf5/meshes/RF.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RF.STL" />
+          filename="package://urdf5/meshes/RF.STL" />
       </geometry>
     </collision>
   </link>
@@ -89,7 +89,7 @@
     type="continuous">
     <origin
       xyz="0.075 0.05 0.01"
-      rpy="-1.5708 0 -1.5708" />
+      rpy="-1.5707963267949 0 -1.5707963267949" />
     <parent
       link="base_link" />
     <child
@@ -101,16 +101,16 @@
     name="RB">
     <inertial>
       <origin
-        xyz="-6.93889390390723E-18 3.46944695195361E-18 0.00717282965435007"
+        xyz="-6.93889390390723E-18 6.93889390390723E-18 0.00717282965435007"
         rpy="0 0 0" />
       <mass
         value="0.0489436503728706" />
       <inertia
         ixx="1.7662184841427E-05"
-        ixy="-8.76758942724358E-22"
-        ixz="-4.65081024653856E-22"
+        ixy="-8.65954703766451E-22"
+        ixz="-4.6479789450203E-22"
         iyy="1.7662184841427E-05"
-        iyz="9.7625151719536E-23"
+        iyz="9.65745457224752E-23"
         izz="3.36011356425037E-05" />
     </inertial>
     <visual>
@@ -119,7 +119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RB.STL" />
+          filename="package://urdf5/meshes/RB.STL" />
       </geometry>
       <material
         name="">
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/RB.STL" />
+          filename="package://urdf5/meshes/RB.STL" />
       </geometry>
     </collision>
   </link>
@@ -142,7 +142,7 @@
     type="continuous">
     <origin
       xyz="0.075 -0.06 0.01"
-      rpy="-1.5708 0 -1.5708" />
+      rpy="-1.5707963267949 0 -1.5707963267949" />
     <parent
       link="base_link" />
     <child
@@ -160,10 +160,10 @@
         value="0.0489436503728706" />
       <inertia
         ixx="1.76621848414269E-05"
-        ixy="0"
-        ixz="4.40049937296268E-22"
+        ixy="1.6940658945086E-21"
+        ixz="4.39284338123991E-22"
         iyy="1.76621848414269E-05"
-        iyz="3.14023811486334E-22"
+        iyz="3.1501386768452E-22"
         izz="3.36011356425037E-05" />
     </inertial>
     <visual>
@@ -172,7 +172,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LF.STL" />
+          filename="package://urdf5/meshes/LF.STL" />
       </geometry>
       <material
         name="">
@@ -186,7 +186,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LF.STL" />
+          filename="package://urdf5/meshes/LF.STL" />
       </geometry>
     </collision>
   </link>
@@ -195,7 +195,7 @@
     type="continuous">
     <origin
       xyz="-0.075 0.05 0.01"
-      rpy="1.5708 0.91772 1.5708" />
+      rpy="1.5707963267949 0.917718602617513 1.5707963267949" />
     <parent
       link="base_link" />
     <child
@@ -207,16 +207,16 @@
     name="LR">
     <inertial>
       <origin
-        xyz="0 -6.93889390390723E-18 -0.00717282965435007"
+        xyz="0 0 -0.00717282965435008"
         rpy="0 0 0" />
       <mass
         value="0.0489436503728706" />
       <inertia
-        ixx="1.7662184841427E-05"
-        ixy="2.5410988417629E-21"
-        ixz="6.92703769507587E-22"
-        iyy="1.7662184841427E-05"
-        iyz="-2.33376745207237E-23"
+        ixx="1.76621848414269E-05"
+        ixy="3.3881317890172E-21"
+        ixz="6.92279468509898E-22"
+        iyy="1.76621848414269E-05"
+        iyz="-2.44335334380697E-23"
         izz="3.36011356425037E-05" />
     </inertial>
     <visual>
@@ -225,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LR.STL" />
+          filename="package://urdf5/meshes/LR.STL" />
       </geometry>
       <material
         name="">
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1/meshes/LR.STL" />
+          filename="package://urdf5/meshes/LR.STL" />
       </geometry>
     </collision>
   </link>
