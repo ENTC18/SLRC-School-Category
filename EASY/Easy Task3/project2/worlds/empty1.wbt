@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.2602057950042675 -0.9320410593787822 -0.25217535144869807 2.3479318747691007
-  position -0.19021167545992923 0.28877813022633647 -0.38308223182054635
+  orientation -0.23872745554343427 -0.9137729489783522 -0.32867643615745173 2.5928283633496747
+  position -0.656854318933768 1.5519906871096367 -1.6011840835604751
 }
 TexturedBackground {
 }
@@ -13,10 +13,13 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0.15006 -0.0375289 -0.251149
   rotation -0.11734498718909642 -0.8913149026924835 -0.4379359521892209 0.584054
+  floorAppearance Parquetry {
+    type "light strip"
+  }
 }
 Robot {
-  translation 0.122971 -0.00435404 -2.13589e-07
-  rotation 0.9831062034066607 -0.12942402677809275 0.12942802677892035 -1.5878253071795863
+  translation 0.1254376450586017 -0.005198776209673993 -1.774255622465082e-05
+  rotation 0.9831237788788508 -0.12940254427761533 0.12931595778343863 -1.5885356357787987
   children [
     Shape {
       appearance DEF base_link_material PBRAppearance {
@@ -38,6 +41,7 @@ Robot {
     }
     HingeJoint {
       jointParameters DEF wheel_colour HingeJointParameters {
+        position -1.0626703440288575e-09
         anchor 0.075 0.05 0.01
       }
       device [
@@ -51,7 +55,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.075 0.05 0.01
-        rotation -0.5773502691896258 0.5773502691896258 -0.5773502691896257 2.094395
+        rotation -0.5773502693941369 0.5773502687806038 -0.5773502693941367 2.094395000613533
         children [
           Shape {
             appearance DEF RF_material PBRAppearance {
@@ -89,6 +93,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
+        position 2.2854608416139322e-08
         anchor 0.075 -0.06 0.01
       }
       device [
@@ -102,7 +107,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.075 -0.06 0.01
-        rotation -0.5773502691896257 0.5773502691896257 -0.5773502691896257 2.094395
+        rotation -0.5773502647912538 0.5773502779863687 -0.5773502647912545 2.094394986804886
         children [
           Shape {
             appearance DEF RB_material PBRAppearance {
@@ -140,6 +145,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
+        position 7.333870205162663e-08
         anchor -0.075 0.05 0.01
       }
       device [
@@ -153,7 +159,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.075 0.05 0.01
-        rotation 0.3054381016020161 0.901895300009659 0.3054381016020162 1.6738699999999997
+        rotation 0.3054381315885764 0.9018952796990138 0.30543813158857097 1.6738700224004348
         children [
           Shape {
             appearance DEF LF_material PBRAppearance {
@@ -191,6 +197,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
+        position -3.593876020776121e-08
         anchor -0.075 -0.06 0.01
       }
       device [
@@ -204,7 +211,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.075 -0.06 0.01
-        rotation 0.6609417825686957 0.35540388308209325 0.6609417825686955 2.4586299999999994
+        rotation 0.6609417789721579 0.3554038964589803 0.6609417789721677 2.4586299762465713
         children [
           Shape {
             appearance DEF LB_material PBRAppearance {
@@ -325,8 +332,9 @@ Robot {
       ]
       name "led(5)"
     }
-    DistanceSensor {
+    DEF S1 DistanceSensor {
       translation 0.1 0.115 0
+      rotation 0 1 0 1.5708
       children [
         DEF sensor Shape {
           appearance PBRAppearance {
@@ -335,34 +343,38 @@ Robot {
             metalness 0
           }
           geometry Box {
-            size 0.01 0.01 0.02
+            size 0.01 0.01 0.01
           }
         }
       ]
     }
-    DistanceSensor {
+    DEF S2 DistanceSensor {
       translation 0.05 0.115 0
+      rotation 0 1 0 1.5708
       children [
         USE sensor
       ]
       name "distance sensor(1)"
     }
-    DistanceSensor {
+    DEF S3 DistanceSensor {
       translation 0 0.115 0
+      rotation 0 1 0 1.5708
       children [
         USE sensor
       ]
       name "distance sensor(2)"
     }
-    DistanceSensor {
+    DEF S4 DistanceSensor {
       translation -0.05 0.115 0
+      rotation 0 1 0 1.5708
       children [
         USE sensor
       ]
       name "distance sensor(3)"
     }
-    DistanceSensor {
+    DEF S5 DistanceSensor {
       translation -0.1 0.115 0
+      rotation 0 1 0 1.5708
       children [
         USE sensor
       ]
