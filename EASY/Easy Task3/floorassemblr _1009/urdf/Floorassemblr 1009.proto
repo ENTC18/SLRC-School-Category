@@ -2,7 +2,7 @@
 # license: Apache License 2.0
 # license url: http://www.apache.org/licenses/LICENSE-2.0
 # This is a proto file for Webots for the Floorassemblr 1009
-# Extracted from: floorassemblr _1009.urdf
+# Extracted from: assembly.urdf
 
 PROTO Floorassemblr 1009 [
   field  SFVec3f     translation     0 0 0
@@ -34,17 +34,7 @@ PROTO Floorassemblr 1009 [
           metalness 0
           emissiveColor 0.000000 0.000000 0.000000
         }
-        geometry DEF fsdf IndexedFaceSet {
-          coord Coordinate {
-            point [
-              -0.750000 0.010000 0.500000, -0.750000 0.010000 -0.500000, -0.750000 0.000000 0.500000, -0.750000 0.000000 -0.500000, -0.250000 0.010000 0.500000, -0.250000 0.000000 0.500000, -0.250000 0.010000 -0.500000, -0.250000 0.000000 -0.500000, 
-            ]
-          }
-          coordIndex [
-            2 1 3 -1 4 0 5 -1 5 0 2 -1 6 4 7 -1 7 4 5 -1 1 6 3 -1 3 6 7 -1 4 6 0 -1 0 6 1 -1 7 5 3 -1 3 5 2 -1 
-          ]
-          creaseAngle 1
-        }
+        geometry USE fsdf
       }
     ]
     name IS name 
