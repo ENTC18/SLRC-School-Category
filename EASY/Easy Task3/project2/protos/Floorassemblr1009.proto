@@ -1,0 +1,62 @@
+#VRML_SIM R2021a utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the Floorassemblr 1009
+# Extracted from: floorassemblr _1009.urdf
+
+PROTO Floorassemblr 1009 [
+  field  SFVec3f     translation     0 0 0
+  field  SFRotation  rotation        0 1 0 0
+  field  SFString    name            "Floorassemblr 1009"  # Is `Robot.name`.
+  field  SFString    controller      "void"                # Is `Robot.controller`.
+  field  MFString    controllerArgs  []                    # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""                    # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE                 # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE                  # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE                 # Is `Robot.selfCollision`.
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    children [
+      Shape {
+        appearance DEF fsdf_material PBRAppearance {
+          baseColor 0.000000 0.000000 0.000000
+          transparency 0.000000
+          roughness 1.000000
+          metalness 0
+          emissiveColor 0.000000 0.000000 0.000000
+        }
+        geometry DEF fsdf IndexedFaceSet {
+          coord Coordinate {
+            point [
+              -0.750000 0.010000 0.500000, -0.750000 0.010000 -0.500000, -0.750000 0.000000 0.500000, -0.750000 0.000000 -0.500000, -0.250000 0.010000 0.500000, -0.250000 0.000000 0.500000, -0.250000 0.010000 -0.500000, -0.250000 0.000000 -0.500000, 
+            ]
+          }
+          coordIndex [
+            2 1 3 -1 4 0 5 -1 5 0 2 -1 6 4 7 -1 7 4 5 -1 1 6 3 -1 3 6 7 -1 4 6 0 -1 0 6 1 -1 7 5 3 -1 3 5 2 -1 
+          ]
+          creaseAngle 1
+        }
+      }
+    ]
+    name IS name 
+    boundingObject USE fsdf
+    physics Physics {
+      density -1
+      mass 5.000000
+      centerOfMass [ -0.500000 0.005000 0.000000 ]
+      inertiaMatrix [
+        4.167100e-01 5.208300e-01 1.042100e-01
+        2.938700e-36 1.156500e-18 -1.102000e-35
+      ]
+    }
+  }
+}

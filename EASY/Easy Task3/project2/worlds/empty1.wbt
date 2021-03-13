@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.31302402742683727 -0.8891953265668177 -0.3336879222645213 2.3414061619615723
-  position -0.7375950645585856 1.3639375706762946 -1.0633961852257912
+  orientation -0.26177535618159425 -0.8845203281261046 -0.38613139218106557 2.6185254839109153
+  position -0.700266337053698 2.169196225411197 -1.684582421007149
 }
 TexturedBackground {
 }
@@ -13,7 +13,16 @@ TexturedBackgroundLight {
 RectangleArena {
   translation 0.15006 -0.0375289 -0.251149
   rotation -0.11734498718909642 -0.8913149026924835 -0.4379359521892209 0.584054
-  floorAppearance NULL
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "C:/Users/MSI/Desktop/Screenshot 2021-03-10 103740.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
 }
 Robot {
   translation 0.1254376450586017 -0.005198776209673993 -1.774255622465082e-05
