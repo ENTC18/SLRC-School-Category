@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
  for (int i = 0; i < 4; i++) {
     wheels[i] = robot->getMotor(wheels_names[i]);
    // wheels[i]->setPosition(INFINITY);
-    //wheels[i]->setVelocity(0.0);
+    wheels[i]->setVelocity(2.0);
   }
   
     LED1[0] = robot->getLED("led");
@@ -44,10 +44,10 @@ while(hear==0 &&(car_receiver[0]->getQueueLength())>0){
   */
  // if(hear==1 && (robot->getTime())>t+2 ){
    LED1[0]->set(255);
-      wheels[0]->setPosition(20);
-      wheels[1]->setPosition(20);
-      wheels[2]->setPosition(-20);
-      wheels[3]->setPosition(20);
+      wheels[0]->setPosition(INFINITY);
+      wheels[1]->setPosition(INFINITY);
+      wheels[2]->setPosition(INFINITY);
+      wheels[3]->setPosition(INFINITY);
       std::cout<<"msg received  - go"<<std::endl;
  // hear=2;
  // t=robot->getTime();
