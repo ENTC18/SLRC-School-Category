@@ -13,10 +13,10 @@
 
 ![](https://github.com/ENTC18/SLRC-School-Category/blob/main/task-description.JPG)
 
----
 
-🔴 
-## Useul Utilities for task designing
+---
+ 
+## *Useul Utilities for task designing*
 
 1. [Utility to convert URDF files to Webots PROTO nodes](https://github.com/cyberbotics/urdf2webots)
 ```python
@@ -30,8 +30,6 @@
 ```
 2. [SolidWorks to URDF](https://youtu.be/cSeFLz0bCXw)
 3. [Solidworks URDF Exporter](https://github.com/ros/solidworks_urdf_exporter)
-
-## *Task Designers* [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
 
 ## *Webots Download Links*
 
@@ -61,7 +59,9 @@
 
 ---
 
-## Current Plan
+## *Task Designers* [UPDATE YOUR TASKS HERE](https://docs.google.com/spreadsheets/d/1kqnDjt3A5ksvPznOVu0sDi2poCEavHadekGhxjS8AnQ/edit?usp=sharing)
+
+## *Current Plan*
 
 |Level|Number of Tasks|Allowed Time Duration|
 |:----:|:---:|:---|
