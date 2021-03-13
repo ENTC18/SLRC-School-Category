@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="floorassemblr">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.14859 0.93208 1.6661"
+        rpy="0 0 0" />
+      <mass
+        value="40" />
+      <inertia
+        ixx="13.334"
+        ixy="0"
+        ixz="-6.0137E-17"
+        iyy="16.667"
+        iyz="-6.9102E-35"
+        izz="3.3337" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://floorassemblr/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://floorassemblr/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
