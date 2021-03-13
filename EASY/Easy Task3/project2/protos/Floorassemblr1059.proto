@@ -1,0 +1,116 @@
+#VRML_SIM R2021a utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the Floorassemblr1059
+# Extracted from: floorassemblr1059.urdf
+
+PROTO Floorassemblr1059 [
+  field  SFVec3f     translation     0 0 0
+  field  SFRotation  rotation        0 1 0 0
+  field  SFString    name            "Floorassemblr1059"  # Is `Robot.name`.
+  field  SFString    controller      "void"               # Is `Robot.controller`.
+  field  MFString    controllerArgs  []                   # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""                   # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE                # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE                 # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE                # Is `Robot.selfCollision`.
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    children [
+      Shape {
+        appearance DEF base_link_material PBRAppearance {
+          baseColor 0.796078 0.823529 0.937255
+          transparency 0.000000
+          roughness 1.000000
+          metalness 0
+          emissiveColor 0.000000 0.000000 0.000000
+        }
+        geometry DEF base_link IndexedFaceSet {
+          coord Coordinate {
+            point [
+              -0.101412 -2.166100 0.937078, -0.101412 -1.166100 0.937078, -0.101412 -2.166100 0.927078, -0.101412 -1.166100 0.927078, 0.398588 -2.166100 0.937078, 0.398588 -2.166100 0.927078, 0.398588 -1.166100 0.937078, 0.398588 -1.166100 0.927078, 
+            ]
+          }
+          coordIndex [
+            2 1 3 -1 4 0 5 -1 5 0 2 -1 6 4 7 -1 7 4 5 -1 1 6 3 -1 3 6 7 -1 4 6 0 -1 0 6 1 -1 7 5 3 -1 3 5 2 -1 
+          ]
+          creaseAngle 1
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0.000000 0.000000 0.000000
+          anchor 0.648590 -1.666100 0.927080
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "ser"
+            maxTorque 10000
+          }
+          PositionSensor {
+            name "ser_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.648590 -1.666100 0.927080
+          rotation 1.000000 0.000000 0.000000 1.570800
+          children [
+            Shape {
+              appearance DEF dfsdf_material PBRAppearance {
+                baseColor 0.796078 0.823529 0.937255
+                transparency 0.000000
+                roughness 1.000000
+                metalness 0
+                emissiveColor 0.000000 0.000000 0.000000
+              }
+              geometry DEF dfsdf IndexedFaceSet {
+                coord Coordinate {
+                  point [
+                    -0.250000 0.010000 0.500000, -0.250000 0.010000 -0.500000, -0.250000 0.000000 0.500000, -0.250000 0.000000 -0.500000, 0.250000 0.010000 0.500000, 0.250000 0.000000 0.500000, 0.250000 0.010000 -0.500000, 0.250000 0.000000 -0.500000, 
+                  ]
+                }
+                coordIndex [
+                  2 1 3 -1 4 0 5 -1 5 0 2 -1 6 4 7 -1 7 4 5 -1 1 6 3 -1 3 6 7 -1 4 6 0 -1 0 6 1 -1 7 5 3 -1 3 5 2 -1 
+                ]
+                creaseAngle 1
+              }
+            }
+          ]
+          name "dfsdf"
+          boundingObject USE dfsdf
+          physics Physics {
+            density -1
+            mass 5.000000
+            centerOfMass [ 0.000000 0.005000 0.000000 ]
+            inertiaMatrix [
+              4.167083e-01 5.208333e-01 1.042083e-01
+              0.000000e+00 0.000000e+00 -1.727554e-35
+            ]
+          }
+        }
+      }
+    ]
+    name IS name 
+    boundingObject USE base_link
+    physics Physics {
+      density -1
+      mass 5.000000
+      centerOfMass [ 0.148588 -1.666100 0.932078 ]
+      inertiaMatrix [
+        4.167083e-01 1.042083e-01 5.208333e-01
+        -1.156482e-18 7.228115e-35 2.551008e-17
+      ]
+    }
+  }
+}

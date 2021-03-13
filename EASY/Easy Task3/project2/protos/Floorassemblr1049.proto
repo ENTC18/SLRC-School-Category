@@ -1,13 +1,13 @@
 #VRML_SIM R2021a utf8
 # license: Apache License 2.0
 # license url: http://www.apache.org/licenses/LICENSE-2.0
-# This is a proto file for Webots for the Floorassemblr1038
-# Extracted from: floorassemblr1038.urdf
+# This is a proto file for Webots for the Floorassemblr1049
+# Extracted from: floorassemblr1049.urdf
 
-PROTO Floorassemblr1038 [
+PROTO Floorassemblr1049 [
   field  SFVec3f     translation     0 0 0
   field  SFRotation  rotation        0 1 0 0
-  field  SFString    name            "Floorassemblr1038"  # Is `Robot.name`.
+  field  SFString    name            "Floorassemblr1049"  # Is `Robot.name`.
   field  SFString    controller      "void"               # Is `Robot.controller`.
   field  MFString    controllerArgs  []                   # Is `Robot.controllerArgs`.
   field  SFString    customData      ""                   # Is `Robot.customData`.
@@ -27,17 +27,17 @@ PROTO Floorassemblr1038 [
     selfCollision IS selfCollision
     children [
       Shape {
-        appearance DEF side_material PBRAppearance {
-          baseColor 0.796080 0.823530 0.937250
+        appearance DEF base_link_material PBRAppearance {
+          baseColor 0.796078 0.823529 0.937255
           transparency 0.000000
           roughness 1.000000
           metalness 0
           emissiveColor 0.000000 0.000000 0.000000
         }
-        geometry DEF side IndexedFaceSet {
+        geometry DEF base_link IndexedFaceSet {
           coord Coordinate {
             point [
-              -0.250000 0.010000 0.500000, -0.250000 0.010000 -0.500000, -0.250000 0.000000 0.500000, -0.250000 0.000000 -0.500000, 0.250000 0.010000 0.500000, 0.250000 0.000000 0.500000, 0.250000 0.010000 -0.500000, 0.250000 0.000000 -0.500000, 
+              -0.101412 -2.166100 0.937078, -0.101412 -1.166100 0.937078, -0.101412 -2.166100 0.927078, -0.101412 -1.166100 0.927078, 0.398588 -2.166100 0.937078, 0.398588 -2.166100 0.927078, 0.398588 -1.166100 0.937078, 0.398588 -1.166100 0.927078, 
             ]
           }
           coordIndex [
@@ -48,14 +48,14 @@ PROTO Floorassemblr1038 [
       }
     ]
     name IS name 
-    boundingObject USE side
+    boundingObject USE base_link
     physics Physics {
       density -1
       mass 5.000000
-      centerOfMass [ 0.000000 0.005000 0.000000 ]
+      centerOfMass [ 0.148588 -1.666100 0.932078 ]
       inertiaMatrix [
-        4.167100e-01 5.208300e-01 1.042100e-01
-        0.000000e+00 0.000000e+00 -2.903000e-35
+        4.167083e-01 1.042083e-01 5.208333e-01
+        -1.156482e-18 7.081178e-35 2.551008e-17
       ]
     }
   }
