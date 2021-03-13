@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="floorassemblr _1009">
+  name="floorassemblr12345578">
   <link
     name="base_link">
     <inertial>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://floorassemblr _1009/meshes/base_link.STL" />
+          filename="package://floorassemblr12345578/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://floorassemblr _1009/meshes/base_link.STL" />
+          filename="package://floorassemblr12345578/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -54,10 +54,10 @@
         value="5" />
       <inertia
         ixx="0.41671"
-        ixy="2.9387E-36"
+        ixy="0"
         ixz="1.1565E-18"
         iyy="0.52083"
-        iyz="-1.102E-35"
+        iyz="-1.0107E-35"
         izz="0.10421" />
     </inertial>
     <visual>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://floorassemblr _1009/meshes/fsdf.STL" />
+          filename="package://floorassemblr12345578/meshes/fsdf.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://floorassemblr _1009/meshes/fsdf.STL" />
+          filename="package://floorassemblr12345578/meshes/fsdf.STL" />
       </geometry>
     </collision>
   </link>

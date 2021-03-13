@@ -1,19 +1,19 @@
 #VRML_SIM R2021a utf8
 # license: Apache License 2.0
 # license url: http://www.apache.org/licenses/LICENSE-2.0
-# This is a proto file for Webots for the Floorassemblr 1009
-# Extracted from: floorassemblr _1009.urdf
+# This is a proto file for Webots for the Floorassemblr12345578
+# Extracted from: floorassemblr12345578.urdf
 
-PROTO Floorassemblr 1009 [
+PROTO Floorassemblr12345578 [
   field  SFVec3f     translation     0 0 0
   field  SFRotation  rotation        0 1 0 0
-  field  SFString    name            "Floorassemblr 1009"  # Is `Robot.name`.
-  field  SFString    controller      "void"                # Is `Robot.controller`.
-  field  MFString    controllerArgs  []                    # Is `Robot.controllerArgs`.
-  field  SFString    customData      ""                    # Is `Robot.customData`.
-  field  SFBool      supervisor      FALSE                 # Is `Robot.supervisor`.
-  field  SFBool      synchronization TRUE                  # Is `Robot.synchronization`.
-  field  SFBool      selfCollision   FALSE                 # Is `Robot.selfCollision`.
+  field  SFString    name            "Floorassemblr12345578"  # Is `Robot.name`.
+  field  SFString    controller      "void"                   # Is `Robot.controller`.
+  field  MFString    controllerArgs  []                       # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""                       # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE                    # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE                     # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE                    # Is `Robot.selfCollision`.
 ]
 {
   Robot {
@@ -55,7 +55,7 @@ PROTO Floorassemblr 1009 [
       centerOfMass [ -0.500000 0.005000 0.000000 ]
       inertiaMatrix [
         4.167100e-01 5.208300e-01 1.042100e-01
-        2.938700e-36 1.156500e-18 -1.102000e-35
+        0.000000e+00 1.156500e-18 -1.010700e-35
       ]
     }
   }

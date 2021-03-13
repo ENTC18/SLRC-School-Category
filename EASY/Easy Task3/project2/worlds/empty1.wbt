@@ -3,26 +3,384 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.26177535618159425 -0.8845203281261046 -0.38613139218106557 2.6185254839109153
-  position -0.700266337053698 2.169196225411197 -1.684582421007149
+  orientation -0.22179800734595173 -0.9602266007082385 -0.16961874669288812 2.8355524999005906
+  position -0.5692763962045984 0.8236035706691103 -2.063378317334938
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
-RectangleArena {
+Solid {
   translation 0.15006 -0.0375289 -0.251149
   rotation -0.11734498718909642 -0.8913149026924835 -0.4379359521892209 0.584054
-  floorTileSize 1 1
-  floorAppearance PBRAppearance {
-    baseColorMap ImageTexture {
-      url [
-        "C:/Users/MSI/Desktop/Screenshot 2021-03-10 103740.jpg"
+  children [
+    Solid {
+      translation 0.505 0.05 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.005 0.05 0.5
+                0.005 0.05 0.5
+                0.005 0.05 -0.5
+                -0.005 0.05 -0.5
+                -0.005 -0.05 -0.5
+                0.005 -0.05 -0.5
+                0.005 -0.05 0.5
+                -0.005 -0.05 0.5
+                -0.005 -0.05 0.5
+                0.005 -0.05 0.5
+                0.005 0.05 0.5
+                -0.005 0.05 0.5
+                0.005 -0.05 -0.5
+                -0.005 -0.05 -0.5
+                -0.005 0.05 -0.5
+                0.005 0.05 -0.5
+                -0.005 -0.05 -0.5
+                -0.005 -0.05 0.5
+                -0.005 0.05 0.5
+                -0.005 0.05 -0.5
+                0.005 -0.05 0.5
+                0.005 -0.05 -0.5
+                0.005 0.05 -0.5
+                0.005 0.05 0.5
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.01 0
+                0.01 1
+                0 1
+                0 0
+                0.01 0
+                0.01 1
+                0 1
+                0 0
+                0.01 0
+                0.01 0.1
+                0 0.1
+                0 0
+                0.01 0
+                0.01 0.1
+                0 0.1
+                0 0
+                1 0
+                1 0.1
+                0 0.1
+                0 0
+                1 0
+                1 0.1
+                0 0.1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
       ]
+      name "wall"
+      model "box"
+      boundingObject Box {
+        size 0.01 0.1 1
+      }
     }
-    roughness 1
-    metalness 0
-  }
+    Solid {
+      translation -0.505 0.05 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.005 0.05 0.5
+                0.005 0.05 0.5
+                0.005 0.05 -0.5
+                -0.005 0.05 -0.5
+                -0.005 -0.05 -0.5
+                0.005 -0.05 -0.5
+                0.005 -0.05 0.5
+                -0.005 -0.05 0.5
+                -0.005 -0.05 0.5
+                0.005 -0.05 0.5
+                0.005 0.05 0.5
+                -0.005 0.05 0.5
+                0.005 -0.05 -0.5
+                -0.005 -0.05 -0.5
+                -0.005 0.05 -0.5
+                0.005 0.05 -0.5
+                -0.005 -0.05 -0.5
+                -0.005 -0.05 0.5
+                -0.005 0.05 0.5
+                -0.005 0.05 -0.5
+                0.005 -0.05 0.5
+                0.005 -0.05 -0.5
+                0.005 0.05 -0.5
+                0.005 0.05 0.5
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.01 0
+                0.01 1
+                0 1
+                0 0
+                0.01 0
+                0.01 1
+                0 1
+                0 0
+                0.01 0
+                0.01 0.1
+                0 0.1
+                0 0
+                0.01 0
+                0.01 0.1
+                0 0.1
+                0 0
+                1 0
+                1 0.1
+                0 0.1
+                0 0
+                1 0
+                1 0.1
+                0 0.1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall#2"
+      model "box"
+      boundingObject Box {
+        size 0.01 0.1 1
+      }
+    }
+    Solid {
+      translation 0 0.05 0.505
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.51 0.05 0.005
+                0.51 0.05 0.005
+                0.51 0.05 -0.005
+                -0.51 0.05 -0.005
+                -0.51 -0.05 -0.005
+                0.51 -0.05 -0.005
+                0.51 -0.05 0.005
+                -0.51 -0.05 0.005
+                -0.51 -0.05 0.005
+                0.51 -0.05 0.005
+                0.51 0.05 0.005
+                -0.51 0.05 0.005
+                0.51 -0.05 -0.005
+                -0.51 -0.05 -0.005
+                -0.51 0.05 -0.005
+                0.51 0.05 -0.005
+                -0.51 -0.05 -0.005
+                -0.51 -0.05 0.005
+                -0.51 0.05 0.005
+                -0.51 0.05 -0.005
+                0.51 -0.05 0.005
+                0.51 -0.05 -0.005
+                0.51 0.05 -0.005
+                0.51 0.05 0.005
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                1 0
+                1 0.0098039215686275
+                0 0.0098039215686275
+                0 0
+                1 0
+                1 0.0098039215686275
+                0 0.0098039215686275
+                0 0
+                1 0
+                1 0.098039215686275
+                0 0.098039215686275
+                0 0
+                1 0
+                1 0.098039215686275
+                0 0.098039215686275
+                0 0
+                0.0098039215686275 0
+                0.0098039215686275 0.098039215686275
+                0 0.098039215686275
+                0 0
+                0.0098039215686275 0
+                0.0098039215686275 0.098039215686275
+                0 0.098039215686275
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall#3"
+      model "box"
+      boundingObject Box {
+        size 1.02 0.1 0.01
+      }
+    }
+    Solid {
+      translation 0 0.05 -0.505
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.51 0.05 0.005
+                0.51 0.05 0.005
+                0.51 0.05 -0.005
+                -0.51 0.05 -0.005
+                -0.51 -0.05 -0.005
+                0.51 -0.05 -0.005
+                0.51 -0.05 0.005
+                -0.51 -0.05 0.005
+                -0.51 -0.05 0.005
+                0.51 -0.05 0.005
+                0.51 0.05 0.005
+                -0.51 0.05 0.005
+                0.51 -0.05 -0.005
+                -0.51 -0.05 -0.005
+                -0.51 0.05 -0.005
+                0.51 0.05 -0.005
+                -0.51 -0.05 -0.005
+                -0.51 -0.05 0.005
+                -0.51 0.05 0.005
+                -0.51 0.05 -0.005
+                0.51 -0.05 0.005
+                0.51 -0.05 -0.005
+                0.51 0.05 -0.005
+                0.51 0.05 0.005
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                1 0
+                1 0.0098039215686275
+                0 0.0098039215686275
+                0 0
+                1 0
+                1 0.0098039215686275
+                0 0.0098039215686275
+                0 0
+                1 0
+                1 0.098039215686275
+                0 0.098039215686275
+                0 0
+                1 0
+                1 0.098039215686275
+                0 0.098039215686275
+                0 0
+                0.0098039215686275 0
+                0.0098039215686275 0.098039215686275
+                0 0.098039215686275
+                0 0
+                0.0098039215686275 0
+                0.0098039215686275 0.098039215686275
+                0 0.098039215686275
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall#4"
+      model "box"
+      boundingObject Box {
+        size 1.02 0.1 0.01
+      }
+    }
+  ]
+  name "rectangle arena"
+  model "rectangle arena"
 }
 Robot {
   translation 0.1254376450586017 -0.005198776209673993 -1.774255622465082e-05
